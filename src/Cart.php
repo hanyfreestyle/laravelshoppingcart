@@ -1,6 +1,6 @@
 <?php
 
-namespace Gloudemans\Shoppingcart;
+namespace FreestyleRepo\Shoppingcart;
 
 use Carbon\Carbon;
 use Closure;
@@ -9,10 +9,10 @@ use Illuminate\Support\Collection;
 use Illuminate\Session\SessionManager;
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Contracts\Events\Dispatcher;
-use Gloudemans\Shoppingcart\Contracts\Buyable;
-use Gloudemans\Shoppingcart\Exceptions\UnknownModelException;
-use Gloudemans\Shoppingcart\Exceptions\InvalidRowIDException;
-use Gloudemans\Shoppingcart\Exceptions\CartAlreadyStoredException;
+use FreestyleRepo\Shoppingcart\Contracts\Buyable;
+use FreestyleRepo\Shoppingcart\Exceptions\UnknownModelException;
+use FreestyleRepo\Shoppingcart\Exceptions\InvalidRowIDException;
+use FreestyleRepo\Shoppingcart\Exceptions\CartAlreadyStoredException;
 
 class Cart
 {
@@ -509,12 +509,12 @@ class Cart
     /**
      * Add an item to the cart.
      *
-     * @param \Gloudemans\Shoppingcart\CartItem $item          Item to add to the Cart
+     * @param \FreestyleRepo\Shoppingcart\CartItem $item          Item to add to the Cart
      * @param bool                              $keepDiscount  Keep the discount rate of the Item
      * @param bool                              $keepTax       Keep the Tax rate of the Item
      * @param bool                              $dispatchEvent
      *
-     * @return \Gloudemans\Shoppingcart\CartItem The CartItem
+     * @return \FreestyleRepo\Shoppingcart\CartItem The CartItem
      */
     public function addCartItem($item, $keepTax = false, $dispatchEvent = true)
     {

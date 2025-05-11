@@ -1,9 +1,9 @@
 <?php
 
-namespace Gloudemans\Shoppingcart;
+namespace FreestyleRepo\Shoppingcart;
 
 use Illuminate\Contracts\Support\Arrayable;
-use Gloudemans\Shoppingcart\Contracts\Buyable;
+use FreestyleRepo\Shoppingcart\Contracts\Buyable;
 use Illuminate\Contracts\Support\Jsonable;
 
 use Illuminate\Support\Arr;

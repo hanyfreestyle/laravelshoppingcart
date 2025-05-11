@@ -1,50 +1,46 @@
 {
-    "name": "mindscms/laravelshoppingcart",
-    "description": "Laravel Shopping cart",
-    "keywords": ["laravel", "shoppingcart"],
+    "name": "hanyfreestyle/laravelshoppingcart",
+    "description": "Laravel Shopping Cart (updated for Laravel 11)",
+    "keywords": ["laravel", "shoppingcart", "cart", "ecommerce"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Rob Gloudemans",
-            "email": "info@robgloudemans.nl"
+            "name": "Hany Darwish",
+            "email": "hany.freestyle4u@gmail.com"
         },
         {
-            "name": "Michael V.",
-            "email": "michael@michaelbelgium.me"
-        },
-        {
-            "name": "Sami Mansour",
-            "email": "mindscms@gmail.com"
+            "name": "Original Authors",
+            "email": "original@contributor.com"
         }
     ],
     "require": {
-        "illuminate/support": "^7.0|^8.0|^9.0|^10.0",
-        "illuminate/session": "^7.0|^8.0|^9.0|^10.0",
-        "illuminate/events": "^7.0|^8.0|^9.0|^10.0"
+        "illuminate/support": "^7.0|^8.0|^9.0|^10.0|^11.0",
+        "illuminate/session": "^7.0|^8.0|^9.0|^10.0|^11.0",
+        "illuminate/events": "^7.0|^8.0|^9.0|^10.0|^11.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5|^10.1",
         "mockery/mockery": "^1.4",
-        "orchestra/testbench": "^7"
+        "orchestra/testbench": "^7.0|^8.0"
     },
     "autoload": {
         "psr-4": {
-            "Gloudemans\\Shoppingcart\\": "src/"
+            "FreestyleRepo\\Shoppingcart\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Gloudemans\\Tests\\Shoppingcart\\": "tests/"
+            "FreestyleRepo\\Tests\\Shoppingcart\\": "tests/"
         }
     },
     "minimum-stability": "stable",
     "extra": {
         "laravel": {
             "providers": [
-                "Gloudemans\\Shoppingcart\\ShoppingcartServiceProvider"
+                "FreestyleRepo\\Shoppingcart\\ShoppingcartServiceProvider"
             ],
             "aliases": {
-                "Cart": "Gloudemans\\Shoppingcart\\Facades\\Cart"
+                "Cart": "FreestyleRepo\\Shoppingcart\\Facades\\Cart"
             }
         }
     }
